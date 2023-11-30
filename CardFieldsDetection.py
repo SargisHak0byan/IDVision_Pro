@@ -10,7 +10,7 @@ from torchvision.transforms import Resize
 
 from data_aug.data_aug import *
 
-IMAGE_SIZE = 512
+IMAGE_SIZE = 1024
 
 
 
@@ -24,7 +24,7 @@ class CardFieldsDetection(Dataset):
 
         # defining directory to store augmented images
         class_name = data_path.split("/")[-1]
-        aug_root = "./Dataset_Annotations"
+        aug_root = "Dataset"
         aug_path = os.path.join(aug_root, class_name)
         aug_image_id = 102
 
